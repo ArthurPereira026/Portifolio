@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+:root{
+
+    --cor-principal: #f9f9ff;
+    --cor-fundo: #fff;
+    --cor-header: #e9e9f9;
+    --cor-titulo: #000000;
+    --cor-texto-principal: #464554;
+    --cor-secundario: #4338ca;
+    --cor-fundo-icone: #dee8ff;
+    --cor-confirmacao: 00a600;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,11 +24,11 @@
 }
 body{
     
-    background-color: #F9F9FF;
+    background-color: var(--cor-principal);
 }
 
 header{
-   background-color: #e9e9f9;
+   background-color: var(--cor-header);
    height: 8vh;
    display: flex;
    justify-content: space-between;
@@ -32,7 +45,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: #464554;
+    color:var(--cor-texto-principal)
 }
 
 .logo{
@@ -41,11 +54,11 @@ a{
 
 .simbolo-logo{
 
-    color: #4338CA;
+    color: var(--cor-secundario);
 }
 
 .icone-login i{
-    color: #4338CA;
+    color: var(--cor-secundario);
     font-size: 2rem;
     margin-left: 15px;
 }
@@ -67,13 +80,13 @@ h1 {
 .area-imagem{
     width: 30vw;
     border-radius: 15px;
-    box-shadow: 0 0 20px #4338CA;
+    box-shadow: 0 0 20px var(--cor-secundario);
 
 }
 
 .nome-destaque{
     font-size: 4rem;
-    color: #4338CA;
+    color: var(--cor-secundario);
 }
 
 .botoes-iniciais{
@@ -81,8 +94,8 @@ h1 {
 }
 
 .btn-ver-projetos{
-    background-color: #4338CA;
-    color: #FFF;
+    background-color: var(--cor-secundario);
+    color: var(--cor-fundo);
     padding: 15px;
     border-radius: 10px;
     margin-right: 20px;
@@ -91,5 +104,103 @@ h1 {
 .btn-github{
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid #4338CA;
+    border: 1px solid var(--cor-fundo);
+    box-shadow: 0 0 4px var(--cor-secundario) ;
+}
+
+p{
+    color: var(--cor-texto-principal);
+}
+
+.card-foco{
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 0 15px var(--cor-secundario);
+}
+
+.card-foco i,span{
+    color: var(--cor-secundario);
+    font-weight: 700 ;
+}
+
+.card-foco p{
+    margin-bottom: 10px;
+}
+
+.icone-foco{
+    background-color: var(--cor-fundo-icone);
+    padding: 15px;
+    height: 55px;
+    border-radius: 10px;
+    
+ }
+
+ .minha-jornada{
+    margin-top: 100px;
+ }
+
+ .titulo-minha-jornada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .titulo-minha-jornada span{
+    background-color: var(--cor-fundo-icone);
+    padding: 10px 30px;
+    border-radius: 20px;
+ }
+
+ .titulo-minha-jornada h2{
+    font-size: 2.5rem;
+ }
+
+ .titulo-minha-jornada p{
+    font-size: 1.3rem;
+ }
+
+ .cards{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .card-html{
+    background-color: var(--cor-fundo);
+    padding: 30px;
+    max-width: 33%;
+    border-radius: 20px;
+ }
+
+ .topo-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+ .icon-html{
+    background-color: var(--cor-fundo-icone);
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+ }
+
+ .fase-1{
+    background-color: var(--cor-fundo-icone);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.card-html h3{
+    font-size: 1.5rem;
+}
+
+.card-html p{
+    font-size: 1rem;
 }

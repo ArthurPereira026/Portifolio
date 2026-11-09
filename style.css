@@ -9,7 +9,11 @@
     --cor-texto-principal: #464554;
     --cor-secundario: #4338ca;
     --cor-fundo-icone: #dee8ff;
-    --cor-confirmacao: 00a600;
+    --cor-fundo-icone-html:#dee8ff;
+    --cor-fundo-icone-css:#89F5E780;
+    --cor-fundo-icone-desing:#FFDCC399;
+    --cor-confirmacao: #006A61;
+   
 }
 
 
@@ -167,6 +171,7 @@ p{
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
+    gap: 30px;
  }
 
  .card-html{
@@ -184,7 +189,7 @@ p{
  }
 
  .icon-html{
-    background-color: var(--cor-fundo-icone);
+    background-color: var(--cor-fundo-icone-html);
     padding: 20px 10px;
     border-radius: 10px;
     font-size: 0.8rem;
@@ -192,15 +197,130 @@ p{
 
  .fase-1{
     background-color: var(--cor-fundo-icone);
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 0.8rem;
+    padding: 3px 10px ;
+    border-radius: 20px;
+    color: var(--cor-texto-principal);
+    font-weight: 500;
 }
 
 .card-html h3{
     font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .card-html p{
+    color: var(--cor-texto-principal);
     font-size: 1rem;
+}
+
+.barra-card{
+    color: var(--cor-confirmacao);
+    margin-top: 50px;
+}
+
+.barra-card span{
+    color: var(--cor-cofirmacao);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.icon-CSS{
+    background-color: var(--cor-fundo-icone-css);
+    color: #006F66;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+.fase-2{
+
+    background-color: var(--cor-fundo-icone-css);
+    padding: 3px 10px ;
+    border-radius: 20px;
+    color: #006F66;
+    font-weight: 500;
+}
+
+.card-css{
+    background-color: var(--cor-fundo);
+    padding: 30px;
+    max-width: 33%;
+    border-radius: 20px;
+}
+
+.card-desing{
+    background-color: var(--cor-fundo);
+    padding: 30px;
+    max-width: 33%;
+    border-radius: 20px;
+}
+
+.icon-design{
+    background-color: var(--cor-fundo-icone-desing);
+    color: #6E3900;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+
+.fase-3{
+    background-color: var(--cor-fundo-icone-desing);
+    color: #6E3900;
+    padding: 3px 10px ;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.barra-card-css{
+    color: #006F66;
+    margin-top: 50px;
+}
+.barra-card-css span{
+    color: var(--cor-confirmacao);
+}
+
+.barra-card-desing{
+    margin-top: 50px;
+}
+
+.barra-card-desing span{
+    color: #6E3900;
+}
+
+.barra-card-desing i{
+    color: #6E3900;
+}
+
+.reflexao{
+    background-color: var(--cor-fundo-icone);
+    width: 75vw;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.reflexao h3{
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+.area-autor{
+    display: flex;
+    align-items: center;
+}
+
+.logo-autor{
+    background-color: var(--cor-secundario);
+    color: var(--cor-principal);
+    font-size: 1.6rem;
+    border-radius:100%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.reflexao i{
+    color: var(--cor-secundario);
+    font-size: 1.7rem;
 }

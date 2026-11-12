@@ -1,0 +1,187 @@
+@import url(style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 12vw;              /* cartão fica à esquerda */
+    font-family: 'Cormorant Garamond', serif;
+    color: #e8e8ec;
+    background: #05080c;
+}
+
+.video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+main{
+    background-color: transparent;
+}
+
+/* cartão */
+form {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    padding: 64px 40px 36px;
+    background: rgba(8, 12, 16, 0.72);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 22px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6),
+                inset 0 0 30px rgba(120, 160, 200, 0.08);
+}
+
+/* moldura interna fininha */
+form::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+/* emblema no topo, metade para fora do cartão */
+.emblema {
+    position: absolute;
+    top: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 56px;
+    color: #cfd3d8;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* divisor com losango */
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 0 32px;
+    color: #cfd3d8;
+    font-size: 0.8rem;
+}
+
+/* campos com ícone dentro */
+.campo {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.campo i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #e8e8ec;
+}
+
+.campo input {
+    width: 100%;
+    padding: 14px 16px 14px 54px;
+    font-family: inherit;
+    font-size: 1.1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 14px;
+    outline: none;
+    transition: 0.25s;
+}
+
+.campo input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.campo input:focus {
+    border-color: #9fc4e8;
+    box-shadow: 0 0 12px rgba(159, 196, 232, 0.4);
+}
+
+/* lembrar / esqueceu */
+.lembrar-senha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    font-size: 1.05rem;
+}
+
+.lembrar-senha label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.lembrar-senha input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.06);
+    cursor: pointer;
+}
+
+.lembrar-senha input[type="checkbox"]:checked {
+    background: #9fc4e8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* botão em formato de pílula */
+.area-botao button {
+    width: 100%;
+    padding: 14px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.area-botao button:hover {
+    box-shadow: 0 0 18px rgba(159, 196, 232, 0.5);
+    border-color: #9fc4e8;
+}
+
+.area-botao a {
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.75;
+}
+
